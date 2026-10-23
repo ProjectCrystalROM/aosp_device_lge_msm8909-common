@@ -16,7 +16,7 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_codecs_$(TARGET_BOARD_PLATFORM_VARIANT).xml:system/etc/media_codecs.xml
+    device/lge/msm8909-common/configs/media_codecs_$(TARGET_BOARD_PLATFORM).xml:system/etc/media_codecs.xml
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \

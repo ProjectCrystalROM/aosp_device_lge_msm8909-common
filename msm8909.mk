@@ -15,4 +15,4 @@
 #
 
 # Include package config fragments
-include $(LOCAL_PATH)/product/*.mk
+include device/lge/msm8909-common/product/*.mk

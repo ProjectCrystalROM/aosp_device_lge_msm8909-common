@@ -1,6 +1,6 @@
 # IRSC
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/sec_config:system/etc/sec_config
+    device/lge/msm8909-common/configs/sec_config:system/etc/sec_config
 
 # Permissions
 PRODUCT_COPY_FILES += \
