@@ -9,6 +9,10 @@ TARGET_BOARD_PLATFORM := msm8909
 TARGET_NO_BOOTLOADER := true
 BOARD_USES_QCOM_HARDWARE := true
 
+# CM12 ueventd must ignore the outer SoC platform node so it can identify
+# 7824900.sdhci and create /dev/block/bootdevice for the stock fstab paths.
+TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
+
 # Defines firmware/persist labels and stock QCOM service domains.
 include device/qcom/sepolicy/sepolicy.mk
 
